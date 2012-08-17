@@ -44,11 +44,11 @@ And y can be expressed with this:
 
 	 =====
 	
-	|| =  |
+	|| =  =
 
 	 -----
 
-	||    |
+	||    =
 	
 	 -----
 
