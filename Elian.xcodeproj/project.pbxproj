@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC47554915DEF3650028D2C8 /* ElianLetters.plist */; };
+		DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */; };
 		DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */; };
 		DCE9B05F15DEC5DF00BD92A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */; };
 		DCE9B06115DEC5DF00BD92A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B06015DEC5DF00BD92A7 /* CoreGraphics.framework */; };
 		DCE9B06715DEC5DF00BD92A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B06515DEC5DF00BD92A7 /* InfoPlist.strings */; };
 		DCE9B06915DEC5DF00BD92A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B06815DEC5DF00BD92A7 /* main.m */; };
 		DCE9B06D15DEC5DF00BD92A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */; };
+		DCE9B08515DEC62600BD92A7 /* CustomUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */; };
+		DCE9B08615DEC62600BD92A7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07615DEC62600BD92A7 /* Background.png */; };
+		DCE9B08715DEC62600BD92A7 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07715DEC62600BD92A7 /* Background@2x.png */; };
+		DCE9B08815DEC62600BD92A7 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07815DEC62600BD92A7 /* Button.png */; };
+		DCE9B08915DEC62600BD92A7 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07915DEC62600BD92A7 /* Button@2x.png */; };
+		DCE9B08A15DEC62600BD92A7 /* ButtonSide.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */; };
+		DCE9B08B15DEC62600BD92A7 /* ButtonSide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */; };
+		DCE9B08C15DEC62600BD92A7 /* ElianLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */; };
+		DCE9B08D15DEC62600BD92A7 /* ElianLogo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07D15DEC62600BD92A7 /* ElianLogo1@2x.png */; };
+		DCE9B08E15DEC62600BD92A7 /* ElianLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07E15DEC62600BD92A7 /* ElianLogo2.png */; };
+		DCE9B08F15DEC62600BD92A7 /* ElianLogo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07F15DEC62600BD92A7 /* ElianLogo2@2x.png */; };
+		DCE9B09015DEC62600BD92A7 /* LetterComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */; };
+		DCE9B09215DEC62600BD92A7 /* UIButtonWithToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */; };
+		DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B09315DEC65F00BD92A7 /* Elian.ttf */; };
+		DCE9B09615DEC65F00BD92A7 /* Gotham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC47554915DEF3650028D2C8 /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
+		DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DCE9B05815DEC5DF00BD92A7 /* Elian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -26,6 +45,24 @@
 		DCE9B06A15DEC5DF00BD92A7 /* Elian-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Elian-Prefix.pch"; sourceTree = "<group>"; };
 		DCE9B06B15DEC5DF00BD92A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCE9B07315DEC62600BD92A7 /* CustomUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIButton.h; sourceTree = "<group>"; };
+		DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIButton.m; sourceTree = "<group>"; };
+		DCE9B07615DEC62600BD92A7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		DCE9B07715DEC62600BD92A7 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		DCE9B07815DEC62600BD92A7 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		DCE9B07915DEC62600BD92A7 /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSide.png; sourceTree = "<group>"; };
+		DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonSide@2x.png"; sourceTree = "<group>"; };
+		DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElianLogo1.png; sourceTree = "<group>"; };
+		DCE9B07D15DEC62600BD92A7 /* ElianLogo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ElianLogo1@2x.png"; sourceTree = "<group>"; };
+		DCE9B07E15DEC62600BD92A7 /* ElianLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElianLogo2.png; sourceTree = "<group>"; };
+		DCE9B07F15DEC62600BD92A7 /* ElianLogo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ElianLogo2@2x.png"; sourceTree = "<group>"; };
+		DCE9B08015DEC62600BD92A7 /* LetterComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetterComposerViewController.h; sourceTree = "<group>"; };
+		DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterComposerViewController.m; sourceTree = "<group>"; };
+		DCE9B08315DEC62600BD92A7 /* UIButtonWithToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonWithToggle.h; sourceTree = "<group>"; };
+		DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonWithToggle.m; sourceTree = "<group>"; };
+		DCE9B09315DEC65F00BD92A7 /* Elian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Elian.ttf; sourceTree = "<group>"; };
+		DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gotham.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +109,17 @@
 		DCE9B06215DEC5DF00BD92A7 /* Elian */ = {
 			isa = PBXGroup;
 			children = (
+				DCE9B07515DEC62600BD92A7 /* Images */,
 				DCE9B06B15DEC5DF00BD92A7 /* AppDelegate.h */,
 				DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */,
+				DCE9B07315DEC62600BD92A7 /* CustomUIButton.h */,
+				DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */,
+				DCE9B08015DEC62600BD92A7 /* LetterComposerViewController.h */,
+				DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */,
+				DC47554915DEF3650028D2C8 /* ElianLetters.plist */,
+				DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */,
+				DCE9B08315DEC62600BD92A7 /* UIButtonWithToggle.h */,
+				DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */,
 				DCE9B06315DEC5DF00BD92A7 /* Supporting Files */,
 			);
 			path = Elian;
@@ -82,12 +128,31 @@
 		DCE9B06315DEC5DF00BD92A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCE9B09315DEC65F00BD92A7 /* Elian.ttf */,
+				DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */,
 				DCE9B06415DEC5DF00BD92A7 /* Elian-Info.plist */,
 				DCE9B06515DEC5DF00BD92A7 /* InfoPlist.strings */,
 				DCE9B06815DEC5DF00BD92A7 /* main.m */,
 				DCE9B06A15DEC5DF00BD92A7 /* Elian-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCE9B07515DEC62600BD92A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9B07615DEC62600BD92A7 /* Background.png */,
+				DCE9B07715DEC62600BD92A7 /* Background@2x.png */,
+				DCE9B07815DEC62600BD92A7 /* Button.png */,
+				DCE9B07915DEC62600BD92A7 /* Button@2x.png */,
+				DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */,
+				DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */,
+				DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */,
+				DCE9B07D15DEC62600BD92A7 /* ElianLogo1@2x.png */,
+				DCE9B07E15DEC62600BD92A7 /* ElianLogo2.png */,
+				DCE9B07F15DEC62600BD92A7 /* ElianLogo2@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +207,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE9B06715DEC5DF00BD92A7 /* InfoPlist.strings in Resources */,
+				DCE9B08615DEC62600BD92A7 /* Background.png in Resources */,
+				DCE9B08715DEC62600BD92A7 /* Background@2x.png in Resources */,
+				DCE9B08815DEC62600BD92A7 /* Button.png in Resources */,
+				DCE9B08915DEC62600BD92A7 /* Button@2x.png in Resources */,
+				DCE9B08A15DEC62600BD92A7 /* ButtonSide.png in Resources */,
+				DCE9B08B15DEC62600BD92A7 /* ButtonSide@2x.png in Resources */,
+				DCE9B08C15DEC62600BD92A7 /* ElianLogo1.png in Resources */,
+				DCE9B08D15DEC62600BD92A7 /* ElianLogo1@2x.png in Resources */,
+				DCE9B08E15DEC62600BD92A7 /* ElianLogo2.png in Resources */,
+				DCE9B08F15DEC62600BD92A7 /* ElianLogo2@2x.png in Resources */,
+				DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */,
+				DCE9B09615DEC65F00BD92A7 /* Gotham.ttf in Resources */,
+				DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */,
+				DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +233,9 @@
 			files = (
 				DCE9B06915DEC5DF00BD92A7 /* main.m in Sources */,
 				DCE9B06D15DEC5DF00BD92A7 /* AppDelegate.m in Sources */,
+				DCE9B08515DEC62600BD92A7 /* CustomUIButton.m in Sources */,
+				DCE9B09015DEC62600BD92A7 /* LetterComposerViewController.m in Sources */,
+				DCE9B09215DEC62600BD92A7 /* UIButtonWithToggle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +306,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -235,7 +319,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -259,6 +345,7 @@
 				DCE9B07215DEC5DF00BD92A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
