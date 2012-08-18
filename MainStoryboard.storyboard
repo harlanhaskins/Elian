@@ -8,6 +8,7 @@
         <scene sceneID="aCi-d4-0Vr">
             <objects>
                 <navigationController definesPresentationContext="YES" id="8JI-qh-CaU" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="78b-38-5IB">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>

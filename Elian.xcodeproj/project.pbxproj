@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F515E034FE00DAF41E /* IconNonRetina.png */; };
+		DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F815E0350000DAF41E /* Iconretina.png */; };
 		DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC47554915DEF3650028D2C8 /* ElianLetters.plist */; };
 		DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */; };
 		DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC30C2F515E034FE00DAF41E /* IconNonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconNonRetina.png; sourceTree = "<group>"; };
+		DC30C2F815E0350000DAF41E /* Iconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconretina.png; sourceTree = "<group>"; };
 		DC47554915DEF3650028D2C8 /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
 		DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DCE9B05815DEC5DF00BD92A7 /* Elian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elian.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,8 @@
 		DCE9B04D15DEC5DF00BD92A7 = {
 			isa = PBXGroup;
 			children = (
+				DC30C2F815E0350000DAF41E /* Iconretina.png */,
+				DC30C2F515E034FE00DAF41E /* IconNonRetina.png */,
 				DCE9B06215DEC5DF00BD92A7 /* Elian */,
 				DCE9B05B15DEC5DF00BD92A7 /* Frameworks */,
 				DCE9B05915DEC5DF00BD92A7 /* Products */,
@@ -221,6 +227,8 @@
 				DCE9B09615DEC65F00BD92A7 /* Gotham.ttf in Resources */,
 				DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */,
 				DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */,
+				DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */,
+				DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +269,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bobby Wilson (EPDYS8T364)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bobby Wilson (EPDYS8T364)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -275,6 +284,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "C4EAB8F0-815A-4A2E-A45D-23C4713C9311";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4EAB8F0-815A-4A2E-A45D-23C4713C9311";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -287,7 +298,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bobby Wilson (EPDYS8T364)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bobby Wilson (EPDYS8T364)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -295,6 +307,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "C4EAB8F0-815A-4A2E-A45D-23C4713C9311";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C4EAB8F0-815A-4A2E-A45D-23C4713C9311";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -303,11 +317,15 @@
 		DCE9B07115DEC5DF00BD92A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -316,11 +334,15 @@
 		DCE9B07215DEC5DF00BD92A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

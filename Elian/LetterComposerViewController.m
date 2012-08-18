@@ -88,6 +88,7 @@
     }
     _shiftButton.tag = 0;
     _shiftButton.alpha = 0.5f;
+    _isShifted = NO;
     self.navigationItem.title = navTitle;
 }
 
