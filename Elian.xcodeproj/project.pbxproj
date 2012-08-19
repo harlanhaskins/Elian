@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F515E034FE00DAF41E /* IconNonRetina.png */; };
 		DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F815E0350000DAF41E /* Iconretina.png */; };
+		DC30C30D15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */; };
+		DC30C31115E0864F00DAF41E /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C31015E0864F00DAF41E /* Button@2x.png */; };
+		DC30C31A15E0946200DAF41E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C31915E0946200DAF41E /* GameViewController.m */; };
+		DC30C32115E0972800DAF41E /* LearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C32015E0972800DAF41E /* LearningViewController.m */; };
+		DC30C32B15E0B09D00DAF41E /* ButtonCorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32715E0B09D00DAF41E /* ButtonCorrect.png */; };
+		DC30C32C15E0B09D00DAF41E /* ButtonCorrect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32815E0B09D00DAF41E /* ButtonCorrect@2x.png */; };
+		DC30C32D15E0B09D00DAF41E /* ButtonIncorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32915E0B09D00DAF41E /* ButtonIncorrect.png */; };
+		DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */; };
+		DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33815E0C9F100DAF41E /* ResultsViewController.m */; };
+		DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */; };
+		DC30C34015E1635700DAF41E /* SavedString.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33F15E1635700DAF41E /* SavedString.m */; };
+		DC30C34315E1638600DAF41E /* UserStats.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C34215E1638600DAF41E /* UserStats.m */; };
 		DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC47554915DEF3650028D2C8 /* ElianLetters.plist */; };
 		DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */; };
 		DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */; };
@@ -21,7 +33,6 @@
 		DCE9B08615DEC62600BD92A7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07615DEC62600BD92A7 /* Background.png */; };
 		DCE9B08715DEC62600BD92A7 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07715DEC62600BD92A7 /* Background@2x.png */; };
 		DCE9B08815DEC62600BD92A7 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07815DEC62600BD92A7 /* Button.png */; };
-		DCE9B08915DEC62600BD92A7 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07915DEC62600BD92A7 /* Button@2x.png */; };
 		DCE9B08A15DEC62600BD92A7 /* ButtonSide.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */; };
 		DCE9B08B15DEC62600BD92A7 /* ButtonSide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */; };
 		DCE9B08C15DEC62600BD92A7 /* ElianLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */; };
@@ -31,12 +42,29 @@
 		DCE9B09015DEC62600BD92A7 /* LetterComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */; };
 		DCE9B09215DEC62600BD92A7 /* UIButtonWithToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */; };
 		DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B09315DEC65F00BD92A7 /* Elian.ttf */; };
-		DCE9B09615DEC65F00BD92A7 /* Gotham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC30C2F515E034FE00DAF41E /* IconNonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconNonRetina.png; sourceTree = "<group>"; };
 		DC30C2F815E0350000DAF41E /* Iconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconretina.png; sourceTree = "<group>"; };
+		DC30C30B15E0820300DAF41E /* UIViewControllerWithBackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerWithBackgroundImage.h; sourceTree = "<group>"; };
+		DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerWithBackgroundImage.m; sourceTree = "<group>"; };
+		DC30C31015E0864F00DAF41E /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		DC30C31815E0946200DAF41E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		DC30C31915E0946200DAF41E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		DC30C31F15E0972800DAF41E /* LearningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearningViewController.h; sourceTree = "<group>"; };
+		DC30C32015E0972800DAF41E /* LearningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearningViewController.m; sourceTree = "<group>"; };
+		DC30C32715E0B09D00DAF41E /* ButtonCorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonCorrect.png; sourceTree = "<group>"; };
+		DC30C32815E0B09D00DAF41E /* ButtonCorrect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonCorrect@2x.png"; sourceTree = "<group>"; };
+		DC30C32915E0B09D00DAF41E /* ButtonIncorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonIncorrect.png; sourceTree = "<group>"; };
+		DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonIncorrect@2x.png"; sourceTree = "<group>"; };
+		DC30C33715E0C9F000DAF41E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		DC30C33815E0C9F100DAF41E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		DC30C33E15E1635700DAF41E /* SavedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedString.h; sourceTree = "<group>"; };
+		DC30C33F15E1635700DAF41E /* SavedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedString.m; sourceTree = "<group>"; };
+		DC30C34115E1638600DAF41E /* UserStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStats.h; sourceTree = "<group>"; };
+		DC30C34215E1638600DAF41E /* UserStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStats.m; sourceTree = "<group>"; };
 		DC47554915DEF3650028D2C8 /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
 		DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DCE9B05815DEC5DF00BD92A7 /* Elian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elian.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +82,6 @@
 		DCE9B07615DEC62600BD92A7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		DCE9B07715DEC62600BD92A7 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
 		DCE9B07815DEC62600BD92A7 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
-		DCE9B07915DEC62600BD92A7 /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
 		DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSide.png; sourceTree = "<group>"; };
 		DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonSide@2x.png"; sourceTree = "<group>"; };
 		DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ElianLogo1.png; sourceTree = "<group>"; };
@@ -66,7 +93,6 @@
 		DCE9B08315DEC62600BD92A7 /* UIButtonWithToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonWithToggle.h; sourceTree = "<group>"; };
 		DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonWithToggle.m; sourceTree = "<group>"; };
 		DCE9B09315DEC65F00BD92A7 /* Elian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Elian.ttf; sourceTree = "<group>"; };
-		DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gotham.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +109,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC30C33D15E1634100DAF41E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */,
+				DC30C33E15E1635700DAF41E /* SavedString.h */,
+				DC30C33F15E1635700DAF41E /* SavedString.m */,
+				DC30C34115E1638600DAF41E /* UserStats.h */,
+				DC30C34215E1638600DAF41E /* UserStats.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		DCE9B04D15DEC5DF00BD92A7 = {
 			isa = PBXGroup;
 			children = (
@@ -115,15 +153,24 @@
 		DCE9B06215DEC5DF00BD92A7 /* Elian */ = {
 			isa = PBXGroup;
 			children = (
+				DC30C33D15E1634100DAF41E /* Core Data */,
 				DCE9B07515DEC62600BD92A7 /* Images */,
 				DCE9B06B15DEC5DF00BD92A7 /* AppDelegate.h */,
 				DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */,
 				DCE9B07315DEC62600BD92A7 /* CustomUIButton.h */,
 				DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */,
+				DC30C33715E0C9F000DAF41E /* ResultsViewController.h */,
+				DC30C33815E0C9F100DAF41E /* ResultsViewController.m */,
 				DCE9B08015DEC62600BD92A7 /* LetterComposerViewController.h */,
 				DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */,
 				DC47554915DEF3650028D2C8 /* ElianLetters.plist */,
 				DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */,
+				DC30C31F15E0972800DAF41E /* LearningViewController.h */,
+				DC30C32015E0972800DAF41E /* LearningViewController.m */,
+				DC30C31815E0946200DAF41E /* GameViewController.h */,
+				DC30C31915E0946200DAF41E /* GameViewController.m */,
+				DC30C30B15E0820300DAF41E /* UIViewControllerWithBackgroundImage.h */,
+				DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */,
 				DCE9B08315DEC62600BD92A7 /* UIButtonWithToggle.h */,
 				DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */,
 				DCE9B06315DEC5DF00BD92A7 /* Supporting Files */,
@@ -135,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				DCE9B09315DEC65F00BD92A7 /* Elian.ttf */,
-				DCE9B09415DEC65F00BD92A7 /* Gotham.ttf */,
 				DCE9B06415DEC5DF00BD92A7 /* Elian-Info.plist */,
 				DCE9B06515DEC5DF00BD92A7 /* InfoPlist.strings */,
 				DCE9B06815DEC5DF00BD92A7 /* main.m */,
@@ -147,10 +193,14 @@
 		DCE9B07515DEC62600BD92A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DC30C32715E0B09D00DAF41E /* ButtonCorrect.png */,
+				DC30C32815E0B09D00DAF41E /* ButtonCorrect@2x.png */,
+				DC30C32915E0B09D00DAF41E /* ButtonIncorrect.png */,
+				DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */,
 				DCE9B07615DEC62600BD92A7 /* Background.png */,
 				DCE9B07715DEC62600BD92A7 /* Background@2x.png */,
 				DCE9B07815DEC62600BD92A7 /* Button.png */,
-				DCE9B07915DEC62600BD92A7 /* Button@2x.png */,
+				DC30C31015E0864F00DAF41E /* Button@2x.png */,
 				DCE9B07A15DEC62600BD92A7 /* ButtonSide.png */,
 				DCE9B07B15DEC62600BD92A7 /* ButtonSide@2x.png */,
 				DCE9B07C15DEC62600BD92A7 /* ElianLogo1.png */,
@@ -216,7 +266,6 @@
 				DCE9B08615DEC62600BD92A7 /* Background.png in Resources */,
 				DCE9B08715DEC62600BD92A7 /* Background@2x.png in Resources */,
 				DCE9B08815DEC62600BD92A7 /* Button.png in Resources */,
-				DCE9B08915DEC62600BD92A7 /* Button@2x.png in Resources */,
 				DCE9B08A15DEC62600BD92A7 /* ButtonSide.png in Resources */,
 				DCE9B08B15DEC62600BD92A7 /* ButtonSide@2x.png in Resources */,
 				DCE9B08C15DEC62600BD92A7 /* ElianLogo1.png in Resources */,
@@ -224,11 +273,15 @@
 				DCE9B08E15DEC62600BD92A7 /* ElianLogo2.png in Resources */,
 				DCE9B08F15DEC62600BD92A7 /* ElianLogo2@2x.png in Resources */,
 				DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */,
-				DCE9B09615DEC65F00BD92A7 /* Gotham.ttf in Resources */,
 				DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */,
 				DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */,
 				DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */,
 				DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */,
+				DC30C31115E0864F00DAF41E /* Button@2x.png in Resources */,
+				DC30C32B15E0B09D00DAF41E /* ButtonCorrect.png in Resources */,
+				DC30C32C15E0B09D00DAF41E /* ButtonCorrect@2x.png in Resources */,
+				DC30C32D15E0B09D00DAF41E /* ButtonIncorrect.png in Resources */,
+				DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +297,13 @@
 				DCE9B08515DEC62600BD92A7 /* CustomUIButton.m in Sources */,
 				DCE9B09015DEC62600BD92A7 /* LetterComposerViewController.m in Sources */,
 				DCE9B09215DEC62600BD92A7 /* UIButtonWithToggle.m in Sources */,
+				DC30C30D15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m in Sources */,
+				DC30C31A15E0946200DAF41E /* GameViewController.m in Sources */,
+				DC30C32115E0972800DAF41E /* LearningViewController.m in Sources */,
+				DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */,
+				DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */,
+				DC30C34015E1635700DAF41E /* SavedString.m in Sources */,
+				DC30C34315E1638600DAF41E /* UserStats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +430,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */,
+			);
+			currentVersion = DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DCE9B04F15DEC5DF00BD92A7 /* Project object */;
 }

@@ -10,7 +10,7 @@
 @class UIButtonWithToggle;
 @class CustomUIButton;
 
-@interface LetterComposerViewController : UIViewController {
+@interface LetterComposerViewController : UIViewControllerWithBackgroundImage {
     NSString* navTitle;
 }
 
@@ -27,4 +27,14 @@
 @property BOOL isShifted;
 @property (strong, nonatomic) NSArray *buttons;
 @property (nonatomic, retain) NSDictionary* letterCodes;
+
+-(IBAction) buttonPressed;
+-(IBAction) spaceButtonPressed;
+-(IBAction) shiftButtonPressed:(id)sender;
+-(IBAction) enterButtonPressed;
+-(IBAction) clearButtonPressed;
+-(IBAction) resetButtonPressed;
+-(IBAction) deleteButtonPressed;
+-(IBAction) backgroundTouched;
+-(NSString*) letterForButtonToggle;
 @end

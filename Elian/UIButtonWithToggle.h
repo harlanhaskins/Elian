@@ -10,4 +10,6 @@
 
 @interface UIButtonWithToggle : UIButton
 
+-(void) toggleState;
+
 @end

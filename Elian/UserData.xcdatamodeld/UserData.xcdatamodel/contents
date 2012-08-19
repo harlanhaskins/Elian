@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1807" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SavedString" representedClassName="SavedString" syncable="YES">
+        <attribute name="savedText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userStats" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="UserStats" inverseName="savedString" inverseEntity="UserStats" syncable="YES"/>
+    </entity>
+    <entity name="UserStats" representedClassName="UserStats" syncable="YES">
+        <attribute name="bestTime" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="savedString" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="SavedString" inverseName="userStats" inverseEntity="SavedString" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserStats" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="SavedString" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>

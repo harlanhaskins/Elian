@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background.png"]];
     navTitle = @"Nothing.";
     _buttons = [NSArray arrayWithObjects:_topButton, _topLeftButton, _topRightButton, _middleButton, _bottomLeftButton, _bottomRightButton, _bottomButton, _dotButton, nil];
     NSString *path = [[NSBundle mainBundle] pathForResource:
