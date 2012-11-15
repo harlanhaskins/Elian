@@ -19,10 +19,16 @@
 		DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */; };
 		DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33815E0C9F100DAF41E /* ResultsViewController.m */; };
 		DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */; };
-		DC30C34015E1635700DAF41E /* SavedString.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33F15E1635700DAF41E /* SavedString.m */; };
-		DC30C34315E1638600DAF41E /* UserStats.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C34215E1638600DAF41E /* UserStats.m */; };
 		DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC47554915DEF3650028D2C8 /* ElianLetters.plist */; };
-		DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */; };
+		DC4BD27615E5B79F00EC67A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4BD27315E5B73000EC67A8 /* CoreData.framework */; };
+		DC4BD27815E5B90E00EC67A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */; };
+		DC5CD25215EC5A7200D6FFF5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CD25015EC5A6900D6FFF5 /* CFNetwork.framework */; };
+		DC5CD25615EC600D00D6FFF5 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5CD25515EC600D00D6FFF5 /* Appirater.m */; };
+		DC5CD25C15EC6AA700D6FFF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CD25B15EC6AA700D6FFF5 /* SystemConfiguration.framework */; };
+		DC98939D163DB3DD00C53A0D /* SavedString.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98939C163DB3DD00C53A0D /* SavedString.m */; };
+		DC9893A0163DB3E500C53A0D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98939F163DB3E500C53A0D /* Game.m */; };
+		DC9893AB163DC0F000C53A0D /* UserStats.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9893AA163DC0F000C53A0D /* UserStats.m */; };
+		DCB637D5163C6B25008755BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB637D4163C6B25008755BC /* Default-568h@2x.png */; };
 		DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */; };
 		DCE9B05F15DEC5DF00BD92A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */; };
 		DCE9B06115DEC5DF00BD92A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B06015DEC5DF00BD92A7 /* CoreGraphics.framework */; };
@@ -61,12 +67,20 @@
 		DC30C33715E0C9F000DAF41E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		DC30C33815E0C9F100DAF41E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
-		DC30C33E15E1635700DAF41E /* SavedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedString.h; sourceTree = "<group>"; };
-		DC30C33F15E1635700DAF41E /* SavedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedString.m; sourceTree = "<group>"; };
-		DC30C34115E1638600DAF41E /* UserStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStats.h; sourceTree = "<group>"; };
-		DC30C34215E1638600DAF41E /* UserStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStats.m; sourceTree = "<group>"; };
 		DC47554915DEF3650028D2C8 /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
-		DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DC4BD27315E5B73000EC67A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DC5CD25015EC5A6900D6FFF5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DC5CD25415EC600D00D6FFF5 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		DC5CD25515EC600D00D6FFF5 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		DC5CD25B15EC6AA700D6FFF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC98939B163DB3DD00C53A0D /* SavedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedString.h; sourceTree = "<group>"; };
+		DC98939C163DB3DD00C53A0D /* SavedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedString.m; sourceTree = "<group>"; };
+		DC98939E163DB3E500C53A0D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		DC98939F163DB3E500C53A0D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		DC9893A9163DC0F000C53A0D /* UserStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserStats.h; path = ../UserStats.h; sourceTree = "<group>"; };
+		DC9893AA163DC0F000C53A0D /* UserStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserStats.m; path = ../UserStats.m; sourceTree = "<group>"; };
+		DCB637D4163C6B25008755BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DCE9B05815DEC5DF00BD92A7 /* Elian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,8 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5CD25C15EC6AA700D6FFF5 /* SystemConfiguration.framework in Frameworks */,
+				DC4BD27615E5B79F00EC67A8 /* CoreData.framework in Frameworks */,
 				DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */,
 				DCE9B05F15DEC5DF00BD92A7 /* Foundation.framework in Frameworks */,
+				DC5CD25215EC5A7200D6FFF5 /* CFNetwork.framework in Frameworks */,
 				DCE9B06115DEC5DF00BD92A7 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,10 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */,
-				DC30C33E15E1635700DAF41E /* SavedString.h */,
-				DC30C33F15E1635700DAF41E /* SavedString.m */,
-				DC30C34115E1638600DAF41E /* UserStats.h */,
-				DC30C34215E1638600DAF41E /* UserStats.m */,
+				DC98939B163DB3DD00C53A0D /* SavedString.h */,
+				DC98939C163DB3DD00C53A0D /* SavedString.m */,
+				DC98939E163DB3E500C53A0D /* Game.h */,
+				DC98939F163DB3E500C53A0D /* Game.m */,
+				DC9893A9163DC0F000C53A0D /* UserStats.h */,
+				DC9893AA163DC0F000C53A0D /* UserStats.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -124,6 +143,7 @@
 		DCE9B04D15DEC5DF00BD92A7 = {
 			isa = PBXGroup;
 			children = (
+				DCB637D4163C6B25008755BC /* Default-568h@2x.png */,
 				DC30C2F815E0350000DAF41E /* Iconretina.png */,
 				DC30C2F515E034FE00DAF41E /* IconNonRetina.png */,
 				DCE9B06215DEC5DF00BD92A7 /* Elian */,
@@ -143,6 +163,9 @@
 		DCE9B05B15DEC5DF00BD92A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC5CD25B15EC6AA700D6FFF5 /* SystemConfiguration.framework */,
+				DC5CD25015EC5A6900D6FFF5 /* CFNetwork.framework */,
+				DC4BD27315E5B73000EC67A8 /* CoreData.framework */,
 				DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */,
 				DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */,
 				DCE9B06015DEC5DF00BD92A7 /* CoreGraphics.framework */,
@@ -157,14 +180,15 @@
 				DCE9B07515DEC62600BD92A7 /* Images */,
 				DCE9B06B15DEC5DF00BD92A7 /* AppDelegate.h */,
 				DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */,
+				DC5CD25415EC600D00D6FFF5 /* Appirater.h */,
+				DC5CD25515EC600D00D6FFF5 /* Appirater.m */,
 				DCE9B07315DEC62600BD92A7 /* CustomUIButton.h */,
 				DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */,
 				DC30C33715E0C9F000DAF41E /* ResultsViewController.h */,
 				DC30C33815E0C9F100DAF41E /* ResultsViewController.m */,
 				DCE9B08015DEC62600BD92A7 /* LetterComposerViewController.h */,
 				DCE9B08115DEC62600BD92A7 /* LetterComposerViewController.m */,
-				DC47554915DEF3650028D2C8 /* ElianLetters.plist */,
-				DCE4030015DEE98E00FD1B85 /* MainStoryboard.storyboard */,
+				DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */,
 				DC30C31F15E0972800DAF41E /* LearningViewController.h */,
 				DC30C32015E0972800DAF41E /* LearningViewController.m */,
 				DC30C31815E0946200DAF41E /* GameViewController.h */,
@@ -181,6 +205,7 @@
 		DCE9B06315DEC5DF00BD92A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC47554915DEF3650028D2C8 /* ElianLetters.plist */,
 				DCE9B09315DEC65F00BD92A7 /* Elian.ttf */,
 				DCE9B06415DEC5DF00BD92A7 /* Elian-Info.plist */,
 				DCE9B06515DEC5DF00BD92A7 /* InfoPlist.strings */,
@@ -273,7 +298,6 @@
 				DCE9B08E15DEC62600BD92A7 /* ElianLogo2.png in Resources */,
 				DCE9B08F15DEC62600BD92A7 /* ElianLogo2@2x.png in Resources */,
 				DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */,
-				DCE4030115DEE98E00FD1B85 /* MainStoryboard.storyboard in Resources */,
 				DC47554A15DEF3650028D2C8 /* ElianLetters.plist in Resources */,
 				DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */,
 				DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */,
@@ -282,6 +306,8 @@
 				DC30C32C15E0B09D00DAF41E /* ButtonCorrect@2x.png in Resources */,
 				DC30C32D15E0B09D00DAF41E /* ButtonIncorrect.png in Resources */,
 				DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */,
+				DC4BD27815E5B90E00EC67A8 /* MainStoryboard.storyboard in Resources */,
+				DCB637D5163C6B25008755BC /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +328,10 @@
 				DC30C32115E0972800DAF41E /* LearningViewController.m in Sources */,
 				DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */,
 				DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */,
-				DC30C34015E1635700DAF41E /* SavedString.m in Sources */,
-				DC30C34315E1638600DAF41E /* UserStats.m in Sources */,
+				DC5CD25615EC600D00D6FFF5 /* Appirater.m in Sources */,
+				DC98939D163DB3DD00C53A0D /* SavedString.m in Sources */,
+				DC9893A0163DB3E500C53A0D /* Game.m in Sources */,
+				DC9893AB163DC0F000C53A0D /* UserStats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

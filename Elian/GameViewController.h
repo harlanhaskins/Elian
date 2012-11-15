@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Valley Rocket. All rights reserved.
 //
 #import "CustomUIButton.h"
+#import "Game.h"
 
 @interface GameViewController : UIViewControllerWithBackgroundImage
 @property (weak, nonatomic) IBOutlet UILabel *letterLabel;
@@ -17,19 +18,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bestTimeLabel;
 @property NSManagedObjectContext *context;
+@property (weak, nonatomic) Game *currentGame;
 @property NSTimer* timer;
-@property int timeInSeconds;
 @property NSString* alphabet;
-@property BOOL isElianToEnglish;
 @property int correctChoice;
-@property int correctAnswers;
 @property int incorrectAnswers;
-@property int playedGames;
+@property int playedRounds;
 @property int gameLength;
 
--(void) updatetime;
+-(void) updateTime;
 -(IBAction) choiceMade:(id)sender;
 -(NSString*) shuffledAlphabet:(NSString*)finalLettersString;
--(void) setUpGame;
+-(void) setUpRound;
 
 @end

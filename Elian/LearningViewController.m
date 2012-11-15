@@ -8,6 +8,7 @@
 
 #import "LearningViewController.h"
 #import "GameViewController.h"
+#import "Game.h"
 
 @interface LearningViewController ()
 
@@ -62,19 +63,27 @@
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     GameViewController *gvc = (GameViewController*)[segue destinationViewController];
+    NSManagedObjectContext *moc = super.managedObjectContext;
+    NSPersistentStoreCoordinator *psc = moc.persistentStoreCoordinator;
+    NSManagedObjectModel *managedObjectModel =
+    [psc managedObjectModel];
+    NSEntityDescription *entity =
+    [[managedObjectModel entitiesByName] objectForKey:@"Game"];
+    NSManagedObject *newGame = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:super.managedObjectContext];
+    gvc.currentGame = (Game*)newGame;
     if (_longButton.tag == 1) {
-        gvc.gameLength = 26;
+        gvc.currentGame.gameSize = @26;
     }
     else if (_mediumButton.tag == 1) {
-        gvc.gameLength = 18;
+        gvc.currentGame.gameSize = @18;
     }
     else {
-        gvc.gameLength = 10;
+        gvc.currentGame.gameSize = @10;
     }
     if ([segue.identifier isEqualToString:@"Elian"])
-        gvc.isElianToEnglish = YES;
+        gvc.currentGame.isElianToEnglish = YES;
     else
-        gvc.isElianToEnglish = NO;
+        gvc.currentGame.isElianToEnglish = NO;
 }
 
 - (void)viewDidUnload {

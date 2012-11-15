@@ -7,6 +7,7 @@
 //
 
 #import "ResultsViewController.h"
+#import "AppDelegate.h"
 
 @interface ResultsViewController ()
 
@@ -26,13 +27,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    _correctAnswerLabel.text = [NSString stringWithFormat:@"Correct Answers: %@", _currentGame.correctAnswers];
+    _incorrectAnswerLabel.text = [NSString stringWithFormat:@"Incorrect Answers: %d", [_currentGame.gameSize intValue] - [_currentGame.correctAnswers intValue]];
+	_timeLabel.text = [NSString stringWithFormat:@"Time: %@", _currentGame.time];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)doDismiss:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    navTitle = @"Nothing.";
+    navTitle = @"-";
     _buttons = [NSArray arrayWithObjects:_topButton, _topLeftButton, _topRightButton, _middleButton, _bottomLeftButton, _bottomRightButton, _bottomButton, _dotButton, nil];
     NSString *path = [[NSBundle mainBundle] pathForResource:
                       @"ElianLetters" ofType:@"plist"];
@@ -121,5 +121,9 @@
         }
     }
     return codeLetter;
+}
+- (void)viewDidUnload {
+    [self setTopButton:nil];
+    [super viewDidUnload];
 }
 @end

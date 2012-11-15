@@ -13,6 +13,7 @@
 
 @interface UserStats : NSManagedObject
 
+@property (nonatomic, retain) NSNumber * bestTime;
 @property (nonatomic, retain) NSOrderedSet *savedStrings;
 @property (nonatomic, retain) NSSet *savedGames;
 @end

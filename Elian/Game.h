@@ -1,5 +1,5 @@
 //
-//  SavedString.h
+//  Game.h
 //  Elian
 //
 //  Created by Harlan Haskins on 10/28/12.
@@ -11,9 +11,12 @@
 
 @class UserStats;
 
-@interface SavedString : NSManagedObject
+@interface Game : NSManagedObject
 
-@property (nonatomic, retain) NSString * savedText;
+@property (nonatomic, retain) NSNumber * correctAnswers;
+@property (nonatomic, retain) NSNumber * gameSize;
+@property (nonatomic, retain) NSNumber * time;
+@property (nonatomic) BOOL isElianToEnglish;
 @property (nonatomic, retain) UserStats *userStats;
 
 @end

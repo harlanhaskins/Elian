@@ -35,6 +35,6 @@
 -(IBAction) clearButtonPressed;
 -(IBAction) resetButtonPressed;
 -(IBAction) deleteButtonPressed;
--(IBAction) backgroundTouched;
--(NSString*) letterForButtonToggle;
+-(IBAction) backgroundTouched:(id)sender;
+-(NSString*) letterForButtonToggle:(NSString*)currentLetterCode;
 @end
