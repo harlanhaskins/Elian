@@ -30,11 +30,11 @@ For example, the letter a can be expressed like this (='s being 1's and -'s bein
 
 	 =====
 	
-	|| -  =
+	|  -  ||
 	
 	 -----
 	
-	||    |
+	|     |
 	
 	 -----
 
@@ -44,15 +44,15 @@ And y can be expressed with this:
 
 	 =====
 	
-	|| =  =
+	|| =  |
 
 	 -----
 
-	||    =
+	||    |
 	
 	 -----
 
-with a binary representation of 110010010.
+with a binary representation of 11001001.
 
 There's a plist in the source called ElianLetters.plist. In it, there are 26 dictionaries, each with a letter for a lowercase key. Each of those keys has one to four binary letter representations. I just figured them out manually. Whatever.
 
