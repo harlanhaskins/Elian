@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="sgf-G1-MtK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="sgf-G1-MtK">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -26,7 +26,7 @@
             <objects>
                 <viewController id="nUS-qe-jQB" customClass="UIViewControllerWithBackgroundImage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWv-v0-tdN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ElianLogo1.png" id="7xK-FD-x1q">
@@ -38,7 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oxj-GU-N6Y" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="125" width="250" height="45"/>
+                                <rect key="frame" x="35" y="151" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -53,14 +53,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Writing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ZHz-L7-UBI">
-                                <rect key="frame" x="61" y="129" width="198" height="37"/>
+                                <rect key="frame" x="61" y="155" width="198" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aGa-7f-17a" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="191" width="250" height="45"/>
+                                <rect key="frame" x="35" y="231" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rdt-lz-WiX" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="259" width="250" height="45"/>
+                                <rect key="frame" x="35" y="314" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -87,7 +87,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zwx-Ve-rIL" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="325" width="250" height="45"/>
+                                <rect key="frame" x="35" y="394" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -99,7 +99,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cYl-6n-dYy" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="392" width="250" height="45"/>
+                                <rect key="frame" x="35" y="475" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -111,28 +111,28 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Learning" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="AeO-wu-Mti">
-                                <rect key="frame" x="61" y="195" width="198" height="37"/>
+                                <rect key="frame" x="61" y="235" width="198" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JGI-Ua-Jwt">
-                                <rect key="frame" x="61" y="263" width="198" height="37"/>
+                                <rect key="frame" x="61" y="317" width="198" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Savings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="rIP-NG-6Td">
-                                <rect key="frame" x="61" y="329" width="198" height="37"/>
+                                <rect key="frame" x="61" y="397" width="198" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gma-uf-TUk">
-                                <rect key="frame" x="61" y="396" width="198" height="37"/>
+                                <rect key="frame" x="61" y="478" width="198" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -153,7 +153,7 @@
             <objects>
                 <viewController id="Guz-Ri-HmM" customClass="LearningViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VdC-1m-SRV">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Npe-NL-qXF" customClass="CustomUIButton">
@@ -199,8 +199,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="28b-3k-67p" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="19" y="359" width="80" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="14" y="491" width="80" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="s" image="Button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -214,8 +214,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RaU-RS-iGK" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="120" y="359" width="80" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="115" y="491" width="80" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="m" image="Button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,8 +229,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Sjy-SN-1Yi" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="220" y="359" width="80" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="215" y="491" width="80" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="l" image="Button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -265,22 +265,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Short" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ZgQ-rQ-Ohm">
-                                <rect key="frame" x="25" y="363" width="64" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="495" width="64" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UrO-hZ-Q94">
-                                <rect key="frame" x="118" y="363" width="81" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="113" y="495" width="81" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Long" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n6y-ks-hcZ">
-                                <rect key="frame" x="219" y="363" width="81" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="214" y="495" width="81" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -304,11 +304,11 @@
             <objects>
                 <viewController id="TrB-bK-nuV" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cf7-UQ-4sM">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AvF-kj-YAc" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="229" width="250" height="45"/>
+                                <rect key="frame" x="35" y="277" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -323,7 +323,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dTo-mY-21D" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="290" width="250" height="45"/>
+                                <rect key="frame" x="35" y="351" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -338,7 +338,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Gr-Kh-Sat" customClass="CustomUIButton">
-                                <rect key="frame" x="35" y="353" width="250" height="45"/>
+                                <rect key="frame" x="35" y="427" width="250" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -353,56 +353,56 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WuW-SV-C2o">
-                                <rect key="frame" x="61" y="233" width="198" height="41"/>
+                                <rect key="frame" x="61" y="282" width="198" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mf7-3P-qcH">
-                                <rect key="frame" x="55" y="293" width="210" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tAH-S7-w2s">
                                 <rect key="frame" x="55" y="354" width="210" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tAH-S7-w2s">
+                                <rect key="frame" x="55" y="428" width="210" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="x6S-B2-mDv">
-                                <rect key="frame" x="66" y="28" width="189" height="192"/>
+                                <rect key="frame" x="66" y="33" width="189" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="140"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Correct Answers: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vag-aB-lsh">
-                                <rect key="frame" x="9" y="411" width="137" height="21"/>
+                                <rect key="frame" x="9" y="493" width="137" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Incorrect Answers: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DNU-uL-yPW">
-                                <rect key="frame" x="9" y="430" width="137" height="21"/>
+                                <rect key="frame" x="9" y="516" width="137" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Best Time: 00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9Xf-zK-Rd0">
-                                <rect key="frame" x="163" y="430" width="137" height="21"/>
+                                <rect key="frame" x="163" y="516" width="137" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time: 00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="J5A-hP-81C">
-                                <rect key="frame" x="163" y="411" width="137" height="21"/>
+                                <rect key="frame" x="163" y="493" width="137" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -433,7 +433,7 @@
             <objects>
                 <viewController id="5oL-Dx-FAq" customClass="ResultsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4NR-Ks-ujo">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Correct Answers:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U0L-Ze-OL8">
@@ -498,11 +498,11 @@
             <objects>
                 <viewController id="LJa-uQ-U8e" customClass="LetterComposerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BBQ-Un-Ddu" customClass="UIControl">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4eJ-Ct-XeJ" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="20" y="336" width="72" height="37"/>
+                                <rect key="frame" x="20" y="406" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -517,10 +517,11 @@
                                     <action selector="shiftButtonPressed:" destination="LJa-uQ-U8e" eventType="touchUpInside" id="bEh-LU-w0O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t2T-q2-tmC" customClass="CustomUIButton">
-                                <rect key="frame" x="124" y="336" width="72" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="t2T-q2-tmC" customClass="CustomUIButton">
+                                <rect key="frame" x="124" y="406" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="Button.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -533,7 +534,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6mE-cE-Xen" customClass="CustomUIButton">
-                                <rect key="frame" x="228" y="336" width="72" height="37"/>
+                                <rect key="frame" x="228" y="406" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -548,7 +549,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s9X-Ix-21F" customClass="CustomUIButton">
-                                <rect key="frame" x="20" y="400" width="72" height="37"/>
+                                <rect key="frame" x="20" y="483" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -563,7 +564,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jq1-2v-rMn" customClass="CustomUIButton">
-                                <rect key="frame" x="124" y="400" width="72" height="37"/>
+                                <rect key="frame" x="124" y="483" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -578,7 +579,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fq0-7q-R5p" customClass="CustomUIButton">
-                                <rect key="frame" x="228" y="400" width="72" height="37"/>
+                                <rect key="frame" x="228" y="483" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Button.png">
@@ -607,6 +608,36 @@
                                     <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="Prg-qM-Lh0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5tq-5h-sul" customClass="UIButtonWithToggle">
+                                <rect key="frame" x="103" y="73" width="25" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="ButtonSide.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="ILa-7I-uMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WfI-d2-Uwu" customClass="UIButtonWithToggle">
+                                <rect key="frame" x="193" y="73" width="25" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="ButtonSide.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="KoH-q2-hGq"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xWF-dh-m5N" customClass="UIButtonWithToggle">
                                 <rect key="frame" x="124" y="154" width="75" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -620,6 +651,21 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="wqY-hx-1hs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9kJ-U8-Ts8" customClass="UIButtonWithToggle">
+                                <rect key="frame" x="103" y="164" width="25" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="ButtonSide.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="d6b-OQ-qyU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="J73-cA-S2F" customClass="UIButtonWithToggle">
@@ -652,57 +698,6 @@
                                     <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="ZVy-Ev-pwo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WfI-d2-Uwu" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="193" y="73" width="25" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="ButtonSide.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="KoH-q2-hGq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9kJ-U8-Ts8" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="103" y="164" width="25" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="ButtonSide.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="d6b-OQ-qyU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5tq-5h-sul" customClass="UIButtonWithToggle">
-                                <rect key="frame" x="103" y="73" width="25" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="ButtonSide.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="ILa-7I-uMD"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your words will appear here." textAlignment="center" minimumFontSize="17" id="x6D-g9-X0R">
-                                <rect key="frame" x="61" y="22" width="199" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ifg-Ym-Hr4" customClass="UIButtonWithToggle">
                                 <rect key="frame" x="148" y="112" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -718,43 +713,49 @@
                                     <action selector="buttonPressed" destination="LJa-uQ-U8e" eventType="touchUpInside" id="Dk8-0e-XLt"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your words will appear here." textAlignment="center" minimumFontSize="17" id="x6D-g9-X0R">
+                                <rect key="frame" x="61" y="26" width="199" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="c10-dK-XU1">
-                                <rect key="frame" x="22" y="339" width="64" height="29"/>
+                                <rect key="frame" x="22" y="408" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="T85-1T-nKY">
-                                <rect key="frame" x="126" y="339" width="64" height="29"/>
+                                <rect key="frame" x="126" y="408" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Djy-yZ-aQc">
-                                <rect key="frame" x="231" y="339" width="64" height="29"/>
+                                <rect key="frame" x="231" y="408" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Delete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jVD-KC-fnP">
-                                <rect key="frame" x="22" y="404" width="64" height="29"/>
+                                <rect key="frame" x="22" y="486" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Clear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iML-o3-JVE">
-                                <rect key="frame" x="125" y="404" width="64" height="29"/>
+                                <rect key="frame" x="125" y="486" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Reset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n5B-fX-b2Z">
-                                <rect key="frame" x="230" y="404" width="64" height="29"/>
+                                <rect key="frame" x="230" y="486" width="64" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -768,16 +769,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="XIU-TU-g2m"/>
                     <connections>
-                        <outlet property="bottomButton" destination="J73-cA-S2F" id="xdF-IS-BUQ"/>
-                        <outlet property="bottomLeftButton" destination="9kJ-U8-Ts8" id="NX6-1o-U9R"/>
-                        <outlet property="bottomRightButton" destination="rCR-sR-Gvw" id="RtV-vW-lGV"/>
-                        <outlet property="dotButton" destination="ifg-Ym-Hr4" id="qJB-gE-pNA"/>
-                        <outlet property="middleButton" destination="xWF-dh-m5N" id="mdN-7b-kCW"/>
+                        <outlet property="bottomButton" destination="J73-cA-S2F" id="JRZ-Qk-hG6"/>
+                        <outlet property="bottomLeftButton" destination="9kJ-U8-Ts8" id="AZd-IL-auc"/>
+                        <outlet property="bottomRightButton" destination="rCR-sR-Gvw" id="iNJ-d3-fQN"/>
+                        <outlet property="dotButton" destination="ifg-Ym-Hr4" id="Zms-jV-5sO"/>
+                        <outlet property="middleButton" destination="xWF-dh-m5N" id="nTL-q2-4Ct"/>
                         <outlet property="shiftButton" destination="4eJ-Ct-XeJ" id="dvP-HZ-qsL"/>
                         <outlet property="textField" destination="x6D-g9-X0R" id="SpY-Wh-JQg"/>
-                        <outlet property="topButton" destination="Of0-Ee-9C6" id="K5C-DW-kut"/>
-                        <outlet property="topLeftButton" destination="5tq-5h-sul" id="iY8-o9-S74"/>
-                        <outlet property="topRightButton" destination="WfI-d2-Uwu" id="YJY-bw-gnV"/>
+                        <outlet property="topButton" destination="Of0-Ee-9C6" id="fNI-8n-QdO"/>
+                        <outlet property="topLeftButton" destination="5tq-5h-sul" id="PhC-PV-iMk"/>
+                        <outlet property="topRightButton" destination="WfI-d2-Uwu" id="zJv-PZ-JLf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2r-fX-6b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -791,79 +792,12 @@
         <image name="ElianLogo1.png" width="208" height="110"/>
         <image name="ElianLogo2.png" width="208" height="110"/>
     </resources>
-    <classes>
-        <class className="CustomUIButton" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUIButton.h"/>
-        </class>
-        <class className="GameViewController" superclassName="UIViewControllerWithBackgroundImage">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="choiceMade:"/>
-                <relationship kind="outlet" name="bestTimeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="choice1Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="choice2Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="choice3Label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="correctAnswerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="incorrectAnswerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="letterLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="LearningViewController" superclassName="UIViewControllerWithBackgroundImage">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LearningViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="setDifficulty:"/>
-                <relationship kind="outlet" name="longButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="mediumButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="shortButton" candidateClass="UIButtonWithToggle"/>
-            </relationships>
-        </class>
-        <class className="LetterComposerViewController" superclassName="UIViewControllerWithBackgroundImage">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LetterComposerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
-                <relationship kind="action" name="buttonPressed"/>
-                <relationship kind="action" name="clearButtonPressed"/>
-                <relationship kind="action" name="deleteButtonPressed"/>
-                <relationship kind="action" name="enterButtonPressed"/>
-                <relationship kind="action" name="resetButtonPressed"/>
-                <relationship kind="action" name="shiftButtonPressed:"/>
-                <relationship kind="action" name="spaceButtonPressed"/>
-                <relationship kind="outlet" name="bottomButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="bottomLeftButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="bottomRightButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="dotButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="middleButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="shiftButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="topButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="topLeftButton" candidateClass="UIButtonWithToggle"/>
-                <relationship kind="outlet" name="topRightButton" candidateClass="UIButtonWithToggle"/>
-            </relationships>
-        </class>
-        <class className="ResultsViewController" superclassName="UIViewControllerWithBackgroundImage">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doDismiss:"/>
-                <relationship kind="outlet" name="bestTimeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="correctAnswerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="incorrectAnswerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="UIButtonWithToggle" superclassName="UIButton">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIButtonWithToggle.h"/>
-        </class>
-        <class className="UIViewControllerWithBackgroundImage" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewControllerWithBackgroundImage.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cAu-6U-5no"/>
+        <segue reference="LP1-xv-kue"/>
     </inferredMetricsTieBreakers>
 </document>

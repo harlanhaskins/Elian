@@ -15,8 +15,6 @@
 
 @implementation LetterComposerViewController
 
-@synthesize letterCodes = _letterCodes;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,22 +24,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    navTitle = @"-";
-    _buttons = [NSArray arrayWithObjects:_topButton, _topLeftButton, _topRightButton, _middleButton, _bottomLeftButton, _bottomRightButton, _bottomButton, _dotButton, nil];
+    [self resetButtonPressed];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background.png"]];
+    navTitle = @"Try Making a Letter";
+    self.buttons = [NSArray arrayWithObjects:self.topButton, self.topLeftButton, self.topRightButton, self.middleButton, self.bottomLeftButton, self.bottomRightButton, self.bottomButton, self.dotButton, nil];
     NSString *path = [[NSBundle mainBundle] pathForResource:
                       @"ElianLetters" ofType:@"plist"];
-    _letterCodes = [[NSDictionary alloc] initWithContentsOfFile:path];
+    self.letterCodes = [[NSDictionary alloc] initWithContentsOfFile:path];
     [self.navigationItem setTitle:navTitle];
 }
 
 - (IBAction)buttonPressed {
-    NSMutableArray* tags = [[NSMutableArray alloc] init];
-    for (UIButtonWithToggle* button in _buttons) {
-        [tags addObject:[NSString stringWithFormat:@"%u", button.tag]];
+    NSString *currentLetterCode = @"";
+    for (UIButtonWithToggle* button in self.buttons) {
+        currentLetterCode = [currentLetterCode stringByAppendingFormat:@"%u", button.tag];
     }
-    NSString* currentLetterCode = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@", [tags objectAtIndex:0], [tags objectAtIndex:1], [tags objectAtIndex:2], [tags objectAtIndex:3], [tags objectAtIndex:4], [tags objectAtIndex:5], [tags objectAtIndex:6], [tags objectAtIndex:7]];
     
-    if (_isShifted && ![self.navigationItem.title isEqualToString:navTitle])
+    if (self.isShifted && ![self.navigationItem.title isEqualToString:navTitle])
         [self.navigationItem setTitle:[[self letterForButtonToggle:currentLetterCode] uppercaseString]];
     else
         [self.navigationItem setTitle:[self letterForButtonToggle:currentLetterCode]];
@@ -49,7 +48,7 @@
 
 -(IBAction)backgroundTouched:(id)sender
 {
-    [_textField resignFirstResponder];
+    [self.textField resignFirstResponder];
 }
 
 -(IBAction) enterButtonPressed {
@@ -62,39 +61,36 @@
 }
 
 -(IBAction) spaceButtonPressed {
-    NSString *temp = [NSString stringWithFormat:@"%@ ", self.textField.text];
-    self.textField.text = nil;
-    self.textField.text = temp;
+    self.textField.text = [self.textField.text stringByAppendingString:@" "];
 }
 
 - (IBAction)shiftButtonPressed:(id)sender {
     UIButtonWithToggle* b = (UIButtonWithToggle*)sender;
     if (b.tag == 0)
-        _isShifted = NO;
+        self.isShifted = NO;
     else
-        _isShifted = YES;
+        self.isShifted = YES;
     [self buttonPressed];
 }
-
 
 -(IBAction) clearButtonPressed {
     self.textField.text = @"";
 }
+
 - (IBAction)resetButtonPressed {
-    for (UIButtonWithToggle* button in _buttons) {
+    for (UIButtonWithToggle* button in self.buttons) {
         button.tag = 0;
         button.alpha = 0.5f;
     }
-    _shiftButton.tag = 0;
-    _shiftButton.alpha = 0.5f;
-    _isShifted = NO;
+    self.shiftButton.tag = 0;
+    self.shiftButton.alpha = 0.5f;
+    self.isShifted = NO;
     self.navigationItem.title = navTitle;
 }
 
 -(IBAction) deleteButtonPressed {
     if ([self.textField.text length] > 1) {
-        NSString *temp = [self.textField.text substringToIndex:([self.textField.text length] - 2)];
-        self.textField.text = temp;
+        self.textField.text = [self.textField.text substringToIndex:([self.textField.text length] - 2)];
     }
     else {
         [self clearButtonPressed];
@@ -105,15 +101,14 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    _buttons = nil;
-    _letterCodes = nil;
 }
 
 -(NSString*)letterForButtonToggle:(NSString*) currentLetterCode {
     NSString* codeLetter = navTitle;
-    for (id code in _letterCodes) {
-        NSDictionary* codeKey = [_letterCodes objectForKey:code];
-        for (int i = 0; i < 4; i++) {
+    NSLog(@"%@", currentLetterCode);
+    for (id code in self.letterCodes) {
+        NSDictionary* codeKey = [self.letterCodes objectForKey:code];
+        for (int i = 0; i < [codeKey count]; i++) {
             NSString* letterCode = [codeKey objectForKey:[NSString stringWithFormat:@"%i", i]];
             if (letterCode != nil && [currentLetterCode isEqualToString:letterCode]) {
                 codeLetter = code;
@@ -121,9 +116,5 @@
         }
     }
     return codeLetter;
-}
-- (void)viewDidUnload {
-    [self setTopButton:nil];
-    [super viewDidUnload];
 }
 @end

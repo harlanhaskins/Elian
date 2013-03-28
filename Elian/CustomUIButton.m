@@ -21,6 +21,7 @@
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
+    //This is for feedback when pressing a button.
     self.alpha = 0.5f;
 }
 
