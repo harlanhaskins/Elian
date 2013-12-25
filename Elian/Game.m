@@ -16,6 +16,5 @@
 @dynamic gameSize;
 @dynamic time;
 @dynamic isElianToEnglish;
-@dynamic userStats;
 
 @end

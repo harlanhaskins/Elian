@@ -15,19 +15,19 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.alpha = 0.5;
-        self.tag = 0;
+        self.on = NO;
     }
     return self;
 }
 
 -(void) toggleState {
-    if (self.tag == 0) {
+    if (self.on == NO) {
         self.alpha = 1;
-        self.tag = 1;
+        self.on = YES;
     }
     else {
         self.alpha = 0.5;
-        self.tag = 0;
+        self.on = NO;
     }
 }
 

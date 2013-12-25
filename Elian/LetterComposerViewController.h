@@ -7,34 +7,34 @@
 //
 
 #import <UIKit/UIKit.h>
-@class UIButtonWithToggle;
-@class CustomUIButton;
+#import "CustomUIButton.h"
+#import "UIButtonWithToggle.h"
 
-@interface LetterComposerViewController : UIViewControllerWithBackgroundImage {
+@interface LetterComposerViewController : UIViewController {
     NSString* navTitle;
 }
 
-@property IBOutlet UIButtonWithToggle* topButton;
-@property IBOutlet UIButtonWithToggle* topLeftButton;
-@property IBOutlet UIButtonWithToggle* topRightButton;
-@property IBOutlet UIButtonWithToggle* middleButton;
-@property IBOutlet UIButtonWithToggle* bottomLeftButton;
-@property IBOutlet UIButtonWithToggle* bottomRightButton;
-@property IBOutlet UIButtonWithToggle* bottomButton;
-@property IBOutlet UIButtonWithToggle* dotButton;
-@property IBOutlet UIButtonWithToggle *shiftButton;
-@property IBOutlet UITextField* textField;
-@property BOOL isShifted;
-@property (strong, nonatomic) NSArray *buttons;
-@property (nonatomic, retain) NSDictionary* letterCodes;
+@property (nonatomic) UIButtonWithToggle *shiftButton;
+@property (nonatomic) CustomUIButton *deleteButton;
+@property (nonatomic) CustomUIButton *clearButton;
+@property (nonatomic) CustomUIButton *resetButton;
+@property (nonatomic) CustomUIButton *spaceButton;
+@property (nonatomic) CustomUIButton *enterButton;
 
--(IBAction) buttonPressed;
--(IBAction) spaceButtonPressed;
--(IBAction) shiftButtonPressed:(id)sender;
--(IBAction) enterButtonPressed;
--(IBAction) clearButtonPressed;
--(IBAction) resetButtonPressed;
--(IBAction) deleteButtonPressed;
--(IBAction) backgroundTouched:(id)sender;
+@property (nonatomic) UITextField* textField;
+@property (nonatomic) BOOL isShifted;
+@property (nonatomic) NSMutableArray *buttons;
+@property (nonatomic) NSDictionary* letterCodes;
+
+-(void) buttonPressed:(UIButtonWithToggle*)button;
+-(void) spaceButtonPressed;
+-(void) enterButtonPressed;
+-(void) clearButtonPressed;
+-(void) resetButtonPressed;
+-(void) deleteButtonPressed;
+
+-(void) backgroundTouched:(id)sender;
+
 -(NSString*) letterForButtonToggle:(NSString*)currentLetterCode;
+
 @end

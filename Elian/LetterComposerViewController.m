@@ -7,37 +7,187 @@
 //
 
 #import "LetterComposerViewController.h"
-#import "UIButtonWithToggle.h"
 
 @interface LetterComposerViewController ()
 
 @end
 
-@implementation LetterComposerViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    return self;
+@implementation LetterComposerViewController {
+    UIView* buttonView;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self resetButtonPressed];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background.png"]];
+    
     navTitle = @"Try Making a Letter";
-    self.buttons = [NSArray arrayWithObjects:self.topButton, self.topLeftButton, self.topRightButton, self.middleButton, self.bottomLeftButton, self.bottomRightButton, self.bottomButton, self.dotButton, nil];
+    
+    [self positionButtons];
+    
+    [self positionControlButtons];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:
                       @"ElianLetters" ofType:@"plist"];
-    self.letterCodes = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    _letterCodes = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    _textField = [[UITextField alloc] init];
+    _textField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:18];
+    _textField.height = 44.0;
+    _textField.placeholder = @"Your letters will show up here";
+    _textField.textAlignment = NSTextAlignmentCenter;
+    
+    [self.view addSubview:_textField];
+    
     [self.navigationItem setTitle:navTitle];
 }
 
-- (IBAction)buttonPressed {
+- (void) viewDidLayoutSubviews {
+    _textField.width = self.view.width * 0.75;
+    _textField.centerX = self.view.width / 2;
+    _textField.y = buttonView.y / 2 + 10;
+}
+
+- (void) positionControlButtons {
+    
+    CGFloat padding = 10.0;
+    
+    CGRect buttonFrame = CGRectZero;
+    buttonFrame.size = CGSizeMake(80, 40);
+    buttonFrame.origin.x = padding * 3;
+    buttonFrame.origin.y = self.view.height - 110;
+    
+    _shiftButton = [[UIButtonWithToggle alloc] init];
+    [_shiftButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [_shiftButton setTitle:@"shift" forState:UIControlStateNormal];
+    [_shiftButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    _shiftButton.frame = buttonFrame;
+    
+    [self.view addSubview:_shiftButton];
+    
+    buttonFrame.origin.x += buttonFrame.size.width + padding;
+    
+    _deleteButton = [[CustomUIButton alloc] init];
+    [_deleteButton addTarget:self action:@selector(deleteButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_deleteButton setTitle:@"delete" forState:UIControlStateNormal];
+    [_deleteButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    
+    _deleteButton.frame = buttonFrame;
+    
+    [self.view addSubview:_deleteButton];
+    
+    buttonFrame.origin.x += buttonFrame.size.width + padding;
+    
+    _enterButton = [[CustomUIButton alloc] init];
+    [_enterButton addTarget:self action:@selector(enterButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_enterButton setTitle:@"enter" forState:UIControlStateNormal];
+    [_enterButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    
+    _enterButton.frame = buttonFrame;
+    
+    [self.view addSubview:_enterButton];
+    
+    buttonFrame.origin.x = _shiftButton.x;
+    buttonFrame.origin.y += _shiftButton.height + padding;
+    
+    _resetButton = [[CustomUIButton alloc] init];
+    [_resetButton addTarget:self action:@selector(resetButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_resetButton setTitle:@"reset" forState:UIControlStateNormal];
+    [_resetButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    
+    _resetButton.frame = buttonFrame;
+    
+    [self.view addSubview:_resetButton];
+    
+    buttonFrame.origin.x += buttonFrame.size.width + padding;
+    
+    _spaceButton = [[CustomUIButton alloc] init];
+    [_spaceButton addTarget:self action:@selector(spaceButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_spaceButton setTitle:@"space" forState:UIControlStateNormal];
+    [_spaceButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    
+    _spaceButton.frame = buttonFrame;
+    
+    [self.view addSubview:_spaceButton];
+    
+    buttonFrame.origin.x += buttonFrame.size.width + padding;
+    
+    _clearButton = [[CustomUIButton alloc] init];
+    [_clearButton addTarget:self action:@selector(clearButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [_clearButton setTitle:@"clear" forState:UIControlStateNormal];
+    [_clearButton setTitleColor:[UIColor colorWithRed:0.115 green:0.508 blue:1.000 alpha:1.000] forState:UIControlStateNormal];
+    
+    _clearButton.frame = buttonFrame;
+    
+    [self.view addSubview:_clearButton];
+}
+
+- (void) positionButtons {
+    _buttons = [NSMutableArray array];
+    
+    buttonView = [UIView new];
+    
+    CGSize buttonSideSize = CGSizeMake(25, 120);
+    CGSize buttonSize = CGSizeMake(120, 25);
+    
+    for (int i = 0; i < 8; i++) {
+        UIButtonWithToggle *button = [[UIButtonWithToggle alloc] init];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        button.tag = i;
+        button.backgroundColor = [UIColor blackColor];
+        if (i == 0 ||
+            i == 3 ||
+            i == 6) {
+            [button setSize:buttonSize];
+            button.x = buttonSideSize.width;
+            button.y = (i / 3) * (buttonSideSize.height - (buttonSize.height / 2));
+        }
+        else if (i == 1 ||
+                 i == 2 ||
+                 i == 4 ||
+                 i == 5) {
+            [button setSize:buttonSideSize];
+            button.y = 0;
+            button.x = 0;
+            switch (i) {
+                case 2: {
+                    button.x += buttonSideSize.width + buttonSize.width;
+                    break;
+                }
+                case 4: {
+                    button.y += buttonSize.width;
+                    break;
+                }
+                case 5: {
+                    button.y += buttonSize.width;
+                    button.x += buttonSideSize.width + buttonSize.width;
+                    break;
+                }
+            }
+        }
+        else if (i == 7) {
+            button.size = CGSizeMake(30, 30);
+            button.x = (buttonSideSize.width + (buttonSize.width / 2)) - (button.size.width / 2);
+            button.y = (([(UIButton*)_buttons[3] y] - [_buttons[0] bottom]) / 2) + (button.size.height / 3.5);
+        }
+        [buttonView addSubview:button];
+        [_buttons addObject:button];
+    }
+    buttonView.width = [_buttons[0] width] + ([_buttons[0] height] * 2);
+    buttonView.height = [_buttons[0] width] * 2;
+    [self.view addSubview:buttonView];
+    [buttonView centerToParent];
+}
+
+- (void) buttonPressed:(UIButtonWithToggle*)button {
+    
     NSString *currentLetterCode = @"";
-    for (UIButtonWithToggle* button in self.buttons) {
-        currentLetterCode = [currentLetterCode stringByAppendingFormat:@"%u", button.tag];
+    for (UIButtonWithToggle *button in _buttons) {
+        currentLetterCode = [NSString stringWithFormat:@"%@%u", currentLetterCode, button.on];
     }
     
     if (self.isShifted && ![self.navigationItem.title isEqualToString:navTitle])
@@ -46,49 +196,44 @@
         [self.navigationItem setTitle:[self letterForButtonToggle:currentLetterCode]];
 }
 
--(IBAction)backgroundTouched:(id)sender
+-(void)backgroundTouched:(id)sender
 {
     [self.textField resignFirstResponder];
 }
 
--(IBAction) enterButtonPressed {
+-(void) enterButtonPressed {
     if (![self.navigationItem.title isEqualToString:navTitle]) {
-        NSString *temp = self.textField.text;
-        self.textField.text = [NSString stringWithFormat:@"%@%@", temp, self.navigationItem.title];
+        self.textField.text = [self.textField.text stringByAppendingString:self.navigationItem.title];
     }
     [self resetButtonPressed];
     self.navigationItem.title = navTitle;
 }
 
--(IBAction) spaceButtonPressed {
+-(void) spaceButtonPressed {
     self.textField.text = [self.textField.text stringByAppendingString:@" "];
 }
 
-- (IBAction)shiftButtonPressed:(id)sender {
-    UIButtonWithToggle* b = (UIButtonWithToggle*)sender;
-    if (b.tag == 0)
-        self.isShifted = NO;
-    else
-        self.isShifted = YES;
-    [self buttonPressed];
+- (BOOL) isShifted {
+    return _shiftButton.on;
 }
 
--(IBAction) clearButtonPressed {
-    self.textField.text = @"";
+- (void) clearButtonPressed {
+    _textField.text = @"";
+    [self resetButtonPressed];
 }
 
-- (IBAction)resetButtonPressed {
-    for (UIButtonWithToggle* button in self.buttons) {
-        button.tag = 0;
-        button.alpha = 0.5f;
-    }
-    self.shiftButton.tag = 0;
+- (void) resetButtonPressed {
+    self.shiftButton.on = NO;
     self.shiftButton.alpha = 0.5f;
-    self.isShifted = NO;
     self.navigationItem.title = navTitle;
+    for (UIButtonWithToggle *button in _buttons) {
+        if (button.on) {
+            [button toggleState];
+        }
+    }
 }
 
--(IBAction) deleteButtonPressed {
+- (void) deleteButtonPressed {
     if ([self.textField.text length] > 1) {
         self.textField.text = [self.textField.text substringToIndex:([self.textField.text length] - 2)];
     }
@@ -103,18 +248,12 @@
     [super didReceiveMemoryWarning];
 }
 
--(NSString*)letterForButtonToggle:(NSString*) currentLetterCode {
-    NSString* codeLetter = navTitle;
-    NSLog(@"%@", currentLetterCode);
-    for (id code in self.letterCodes) {
-        NSDictionary* codeKey = [self.letterCodes objectForKey:code];
-        for (int i = 0; i < [codeKey count]; i++) {
-            NSString* letterCode = [codeKey objectForKey:[NSString stringWithFormat:@"%i", i]];
-            if (letterCode != nil && [currentLetterCode isEqualToString:letterCode]) {
-                codeLetter = code;
-            }
-        }
+-(NSString*)letterForButtonToggle:(NSString*) letterCode {
+    NSString *text = self.letterCodes[letterCode];
+    if (!text) {
+        text = navTitle;
     }
-    return codeLetter;
+    return text;
 }
+
 @end

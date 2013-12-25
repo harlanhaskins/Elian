@@ -9,14 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class UserStats;
+@interface Game : NSObject
 
-@interface Game : NSManagedObject
-
-@property (nonatomic, retain) NSNumber * correctAnswers;
-@property (nonatomic, retain) NSNumber * gameSize;
-@property (nonatomic, retain) NSNumber * time;
+@property (nonatomic) NSInteger correctAnswers;
+@property (nonatomic) NSInteger gameSize;
+@property (nonatomic) NSInteger time;
 @property (nonatomic) BOOL isElianToEnglish;
-@property (nonatomic, retain) UserStats *userStats;
 
 @end

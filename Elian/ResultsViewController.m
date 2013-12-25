@@ -15,21 +15,12 @@
 
 @implementation ResultsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _correctAnswerLabel.text = [NSString stringWithFormat:@"Correct Answers: %@", _currentGame.correctAnswers];
-    _incorrectAnswerLabel.text = [NSString stringWithFormat:@"Incorrect Answers: %d", [_currentGame.gameSize intValue] - [_currentGame.correctAnswers intValue]];
-	_timeLabel.text = [NSString stringWithFormat:@"Time: %@", _currentGame.time];
+    _correctAnswerLabel.text = [NSString stringWithFormat:@"Correct Answers: %d", _currentGame.correctAnswers];
+    _incorrectAnswerLabel.text = [NSString stringWithFormat:@"Incorrect Answers: %d", _currentGame.gameSize - _currentGame.correctAnswers];
+	_timeLabel.text = [NSString stringWithFormat:@"Time: %d", _currentGame.time];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,8 +29,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)doDismiss:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+- (void)doDismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

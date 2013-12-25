@@ -9,9 +9,9 @@
 #import "UIViewControllerWithBackgroundImage.h"
 #import "UIButtonWithToggle.h"
 
-@interface LearningViewController : UIViewControllerWithBackgroundImage
-@property (weak, nonatomic) IBOutlet UIButtonWithToggle *shortButton;
-@property (weak, nonatomic) IBOutlet UIButtonWithToggle *mediumButton;
-@property (weak, nonatomic) IBOutlet UIButtonWithToggle *longButton;
+@interface LearningViewController : UIViewController
+@property (nonatomic) UIButtonWithToggle *shortButton;
+@property (nonatomic) UIButtonWithToggle *mediumButton;
+@property (nonatomic) UIButtonWithToggle *longButton;
 
 @end

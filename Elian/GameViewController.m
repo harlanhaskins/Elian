@@ -53,22 +53,22 @@
 }
 
 -(void)updateTime {
-    self.currentGame.time = @([self.currentGame.time intValue] + 1);
-    int hours = [self.currentGame.time intValue] / 3600;
-    int minutes = [self.currentGame.time intValue] / 60 - hours * 60;
-    int seconds = [self.currentGame.time intValue] - hours* 3600 - minutes * 60;
+    self.currentGame.time++;
+    int hours = self.currentGame.time / 3600;
+    int minutes = self.currentGame.time / 60 - hours * 60;
+    int seconds = self.currentGame.time - hours* 3600 - minutes * 60;
     self.timeLabel.text = [NSString stringWithFormat:@"Time: %02d:%02d:%02d", hours, minutes, seconds];
 }
 
 - (IBAction)choiceMade:(id)sender {
     CustomUIButton* b = (CustomUIButton*)sender;
     if (b.tag == self.correctChoice) {
-        self.currentGame.correctAnswers = @([self.currentGame.correctAnswers intValue] + 1);
-        self.correctAnswerLabel.text = [NSString stringWithFormat:@"Correct Answers: %@", self.currentGame.correctAnswers];
+        self.currentGame.correctAnswers++;
+        self.correctAnswerLabel.text = [NSString stringWithFormat:@"Correct Answers: %d", self.currentGame.correctAnswers];
     }
     else {
         self.incorrectAnswers++;
-        self.incorrectAnswerLabel.text = [NSString stringWithFormat:@"Incorrect Answers: %i", self.incorrectAnswers];
+        self.incorrectAnswerLabel.text = [NSString stringWithFormat:@"Incorrect Answers: %d", self.incorrectAnswers];
     }
     self.playedRounds++;
     [self setUpRound];
@@ -83,8 +83,8 @@
     
     [finalLettersString getCharacters:buffer range:NSMakeRange(0, length)];
     
-    for(int i = length - 1; i >= 0; i--){
-        int j = arc4random() % (i + 1);
+    for (int i = 0; i < length; i++){
+        int j = arc4random_uniform(length);
         //NSLog(@"%d %d", i, j);
         //swap at positions i and j
         unichar c = buffer[i];
@@ -99,7 +99,7 @@
 }
 
 -(void) setUpRound {
-    if (self.playedRounds < [self.currentGame.gameSize intValue]) {
+    if (self.playedRounds < self.currentGame.gameSize) {
         //Display the first letter in the shuffled alphabet
         NSString* questionString = [NSString stringWithFormat:@"%c", [self.alphabet characterAtIndex:0]];
         self.letterLabel.text = questionString;

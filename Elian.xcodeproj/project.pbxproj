@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9DDF317185FA82800DB6BBA /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DDF316185FA82800DB6BBA /* ElianLetters.plist */; };
+		C9DDF31A185FA8C400DB6BBA /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDF319185FA8C400DB6BBA /* UIView+Positioning.m */; };
+		C9DDF31D185FC5D200DB6BBA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DDF31C185FC5D200DB6BBA /* Game.m */; };
 		DC30C2F615E034FE00DAF41E /* IconNonRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F515E034FE00DAF41E /* IconNonRetina.png */; };
 		DC30C2F915E0350000DAF41E /* Iconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C2F815E0350000DAF41E /* Iconretina.png */; };
-		DC30C30D15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */; };
 		DC30C31115E0864F00DAF41E /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C31015E0864F00DAF41E /* Button@2x.png */; };
 		DC30C31A15E0946200DAF41E /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C31915E0946200DAF41E /* GameViewController.m */; };
 		DC30C32115E0972800DAF41E /* LearningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C32015E0972800DAF41E /* LearningViewController.m */; };
@@ -18,17 +20,11 @@
 		DC30C32D15E0B09D00DAF41E /* ButtonIncorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32915E0B09D00DAF41E /* ButtonIncorrect.png */; };
 		DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */; };
 		DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33815E0C9F100DAF41E /* ResultsViewController.m */; };
-		DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */; };
 		DC4BD27615E5B79F00EC67A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4BD27315E5B73000EC67A8 /* CoreData.framework */; };
-		DC4BD27815E5B90E00EC67A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */; };
 		DC5CD25215EC5A7200D6FFF5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CD25015EC5A6900D6FFF5 /* CFNetwork.framework */; };
 		DC5CD25615EC600D00D6FFF5 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5CD25515EC600D00D6FFF5 /* Appirater.m */; };
 		DC5CD25C15EC6AA700D6FFF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5CD25B15EC6AA700D6FFF5 /* SystemConfiguration.framework */; };
-		DC690E9117048F5A00A03D8A /* ElianLetters.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC690E9017048F5A00A03D8A /* ElianLetters.plist */; };
 		DC690E9317048FA600A03D8A /* LetterComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC690E9217048FA600A03D8A /* LetterComposerViewController.m */; };
-		DC98939D163DB3DD00C53A0D /* SavedString.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98939C163DB3DD00C53A0D /* SavedString.m */; };
-		DC9893A0163DB3E500C53A0D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98939F163DB3E500C53A0D /* Game.m */; };
-		DC9893AB163DC0F000C53A0D /* UserStats.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9893AA163DC0F000C53A0D /* UserStats.m */; };
 		DCB637D5163C6B25008755BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB637D4163C6B25008755BC /* Default-568h@2x.png */; };
 		DCE9B05D15DEC5DF00BD92A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */; };
 		DCE9B05F15DEC5DF00BD92A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE9B05E15DEC5DF00BD92A7 /* Foundation.framework */; };
@@ -51,10 +47,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9DDF316185FA82800DB6BBA /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
+		C9DDF318185FA8BD00DB6BBA /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		C9DDF319185FA8C400DB6BBA /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		C9DDF31B185FC5D200DB6BBA /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		C9DDF31C185FC5D200DB6BBA /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		DC30C2F515E034FE00DAF41E /* IconNonRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconNonRetina.png; sourceTree = "<group>"; };
 		DC30C2F815E0350000DAF41E /* Iconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Iconretina.png; sourceTree = "<group>"; };
-		DC30C30B15E0820300DAF41E /* UIViewControllerWithBackgroundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerWithBackgroundImage.h; sourceTree = "<group>"; };
-		DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerWithBackgroundImage.m; sourceTree = "<group>"; };
 		DC30C31015E0864F00DAF41E /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
 		DC30C31815E0946200DAF41E /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		DC30C31915E0946200DAF41E /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
@@ -66,21 +65,12 @@
 		DC30C32A15E0B09D00DAF41E /* ButtonIncorrect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonIncorrect@2x.png"; sourceTree = "<group>"; };
 		DC30C33715E0C9F000DAF41E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		DC30C33815E0C9F100DAF41E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
-		DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		DC4BD27315E5B73000EC67A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DC5CD25015EC5A6900D6FFF5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DC5CD25415EC600D00D6FFF5 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
 		DC5CD25515EC600D00D6FFF5 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		DC5CD25B15EC6AA700D6FFF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		DC690E9017048F5A00A03D8A /* ElianLetters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ElianLetters.plist; sourceTree = "<group>"; };
 		DC690E9217048FA600A03D8A /* LetterComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetterComposerViewController.m; sourceTree = "<group>"; };
-		DC98939B163DB3DD00C53A0D /* SavedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedString.h; sourceTree = "<group>"; };
-		DC98939C163DB3DD00C53A0D /* SavedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedString.m; sourceTree = "<group>"; };
-		DC98939E163DB3E500C53A0D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		DC98939F163DB3E500C53A0D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		DC9893A9163DC0F000C53A0D /* UserStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserStats.h; path = ../UserStats.h; sourceTree = "<group>"; };
-		DC9893AA163DC0F000C53A0D /* UserStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserStats.m; path = ../UserStats.m; sourceTree = "<group>"; };
 		DCB637D4163C6B25008755BC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DCE9B05815DEC5DF00BD92A7 /* Elian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE9B05C15DEC5DF00BD92A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -126,20 +116,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC30C33D15E1634100DAF41E /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */,
-				DC98939B163DB3DD00C53A0D /* SavedString.h */,
-				DC98939C163DB3DD00C53A0D /* SavedString.m */,
-				DC98939E163DB3E500C53A0D /* Game.h */,
-				DC98939F163DB3E500C53A0D /* Game.m */,
-				DC9893A9163DC0F000C53A0D /* UserStats.h */,
-				DC9893AA163DC0F000C53A0D /* UserStats.m */,
-			);
-			name = "Core Data";
-			sourceTree = "<group>";
-		};
 		DCE9B04D15DEC5DF00BD92A7 = {
 			isa = PBXGroup;
 			children = (
@@ -176,7 +152,6 @@
 		DCE9B06215DEC5DF00BD92A7 /* Elian */ = {
 			isa = PBXGroup;
 			children = (
-				DC30C33D15E1634100DAF41E /* Core Data */,
 				DCE9B07515DEC62600BD92A7 /* Images */,
 				DCE9B06B15DEC5DF00BD92A7 /* AppDelegate.h */,
 				DCE9B06C15DEC5DF00BD92A7 /* AppDelegate.m */,
@@ -184,17 +159,16 @@
 				DC5CD25515EC600D00D6FFF5 /* Appirater.m */,
 				DCE9B07315DEC62600BD92A7 /* CustomUIButton.h */,
 				DCE9B07415DEC62600BD92A7 /* CustomUIButton.m */,
+				C9DDF31B185FC5D200DB6BBA /* Game.h */,
+				C9DDF31C185FC5D200DB6BBA /* Game.m */,
 				DC30C33715E0C9F000DAF41E /* ResultsViewController.h */,
 				DC30C33815E0C9F100DAF41E /* ResultsViewController.m */,
 				DCE9B08015DEC62600BD92A7 /* LetterComposerViewController.h */,
 				DC690E9217048FA600A03D8A /* LetterComposerViewController.m */,
-				DC4BD27715E5B90E00EC67A8 /* MainStoryboard.storyboard */,
 				DC30C31F15E0972800DAF41E /* LearningViewController.h */,
 				DC30C32015E0972800DAF41E /* LearningViewController.m */,
 				DC30C31815E0946200DAF41E /* GameViewController.h */,
 				DC30C31915E0946200DAF41E /* GameViewController.m */,
-				DC30C30B15E0820300DAF41E /* UIViewControllerWithBackgroundImage.h */,
-				DC30C30C15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m */,
 				DCE9B08315DEC62600BD92A7 /* UIButtonWithToggle.h */,
 				DCE9B08415DEC62600BD92A7 /* UIButtonWithToggle.m */,
 				DCE9B06315DEC5DF00BD92A7 /* Supporting Files */,
@@ -205,7 +179,9 @@
 		DCE9B06315DEC5DF00BD92A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC690E9017048F5A00A03D8A /* ElianLetters.plist */,
+				C9DDF318185FA8BD00DB6BBA /* UIView+Positioning.h */,
+				C9DDF319185FA8C400DB6BBA /* UIView+Positioning.m */,
+				C9DDF316185FA82800DB6BBA /* ElianLetters.plist */,
 				DCE9B09315DEC65F00BD92A7 /* Elian.ttf */,
 				DCE9B06415DEC5DF00BD92A7 /* Elian-Info.plist */,
 				DCE9B06515DEC5DF00BD92A7 /* InfoPlist.strings */,
@@ -295,6 +271,7 @@
 				DCE9B08B15DEC62600BD92A7 /* ButtonSide@2x.png in Resources */,
 				DCE9B08C15DEC62600BD92A7 /* ElianLogo1.png in Resources */,
 				DCE9B08D15DEC62600BD92A7 /* ElianLogo1@2x.png in Resources */,
+				C9DDF317185FA82800DB6BBA /* ElianLetters.plist in Resources */,
 				DCE9B08E15DEC62600BD92A7 /* ElianLogo2.png in Resources */,
 				DCE9B08F15DEC62600BD92A7 /* ElianLogo2@2x.png in Resources */,
 				DCE9B09515DEC65F00BD92A7 /* Elian.ttf in Resources */,
@@ -305,9 +282,7 @@
 				DC30C32C15E0B09D00DAF41E /* ButtonCorrect@2x.png in Resources */,
 				DC30C32D15E0B09D00DAF41E /* ButtonIncorrect.png in Resources */,
 				DC30C32E15E0B09D00DAF41E /* ButtonIncorrect@2x.png in Resources */,
-				DC4BD27815E5B90E00EC67A8 /* MainStoryboard.storyboard in Resources */,
 				DCB637D5163C6B25008755BC /* Default-568h@2x.png in Resources */,
-				DC690E9117048F5A00A03D8A /* ElianLetters.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,18 +294,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE9B06915DEC5DF00BD92A7 /* main.m in Sources */,
+				C9DDF31D185FC5D200DB6BBA /* Game.m in Sources */,
 				DCE9B06D15DEC5DF00BD92A7 /* AppDelegate.m in Sources */,
 				DCE9B08515DEC62600BD92A7 /* CustomUIButton.m in Sources */,
 				DCE9B09215DEC62600BD92A7 /* UIButtonWithToggle.m in Sources */,
-				DC30C30D15E0820300DAF41E /* UIViewControllerWithBackgroundImage.m in Sources */,
+				C9DDF31A185FA8C400DB6BBA /* UIView+Positioning.m in Sources */,
 				DC30C31A15E0946200DAF41E /* GameViewController.m in Sources */,
 				DC30C32115E0972800DAF41E /* LearningViewController.m in Sources */,
 				DC30C33915E0C9F100DAF41E /* ResultsViewController.m in Sources */,
-				DC30C33C15E15FD600DAF41E /* UserData.xcdatamodeld in Sources */,
 				DC5CD25615EC600D00D6FFF5 /* Appirater.m in Sources */,
-				DC98939D163DB3DD00C53A0D /* SavedString.m in Sources */,
-				DC9893A0163DB3E500C53A0D /* Game.m in Sources */,
-				DC9893AB163DC0F000C53A0D /* UserStats.m in Sources */,
 				DC690E9317048FA600A03D8A /* LetterComposerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,10 +382,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "F63E7AAF-289D-4931-AD13-CFCB29463A1A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F63E7AAF-289D-4931-AD13-CFCB29463A1A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -427,10 +399,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Elian/Elian-Prefix.pch";
 				INFOPLIST_FILE = "Elian/Elian-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "F63E7AAF-289D-4931-AD13-CFCB29463A1A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F63E7AAF-289D-4931-AD13-CFCB29463A1A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -458,19 +430,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DC30C33A15E15FD500DAF41E /* UserData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */,
-			);
-			currentVersion = DC30C33B15E15FD600DAF41E /* UserData.xcdatamodel */;
-			path = UserData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DCE9B04F15DEC5DF00BD92A7 /* Project object */;
 }

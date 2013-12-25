@@ -10,6 +10,8 @@
 
 @interface UIButtonWithToggle : UIButton
 
+@property (nonatomic) BOOL on;
+
 -(void) toggleState;
 
 @end
